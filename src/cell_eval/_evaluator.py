@@ -72,7 +72,7 @@ class MetricsEvaluator:
         pdex_kwargs: dict[str, Any] | None = None,
         skip_de: bool = False,
     ):
-        print('INIT|||||||||')
+        print('INIT-------')
         # Enable a global string cache for categorical columns
         pl.enable_string_cache()
 
