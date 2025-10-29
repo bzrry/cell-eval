@@ -214,10 +214,10 @@ def _convert_to_normlog(
         logger.info(f"Discovered integer data for {which}. Converting to norm-log.")
     sc.pp.normalize_total(adata=adata, inplace=True)  # normalize to median
     print('********')
-    print(adata[:30, :5])
+    print(adata[:30, :5].X)
     sc.pp.log1p(adata)  # log-transform (log1p)
     print('||||||||')
-    print(adata[:30, :5])
+    print(adata[:30, :5].X)
 
 
 def _build_de_comparison(
