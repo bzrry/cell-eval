@@ -145,6 +145,7 @@ def discrimination_score(
     Returns:
         Dictionary mapping perturbation names to normalized ranks
     """
+    print('DISCRIMINATION SCORE')
     if metric == "l1" or metric == "manhattan" or metric == "cityblock":
         # Ignore the embedding key for L1
         embed_key = None
